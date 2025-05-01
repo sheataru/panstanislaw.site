@@ -35,6 +35,17 @@ body {
   height: 400px;
 }
 
+.polishcow {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.polishcow img {
+  width: 200px;
+  height: auto;
+}
+
 /* Style and animate the image */
 .top-center img {
   width: 600px;
