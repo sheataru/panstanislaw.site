@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>pan stanisław</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="top-center">
+    <img src="panstanislaw.png" alt="panstanisław.site" id="clickableImage">
+  </div>
+  <div class="welcome-text">
+    <img src="dziendobry.gif" alt="dzien dobry fine shyts" id="welcomeImage">
+  </div>
+  <div class="panstanislaw">
+    <img src="pan.jpg" alt="photo of pan stanisław" id="panImage">
+  </div>
+
+  <audio id="soundEffect" src="vineboom.mp3"></audio>
+  <audio id="backgroundMusic" src="background_music.mp3" loop autoplay></audio>
+
+  <script>
+    const backgroundMusic = document.getElementById('backgroundMusic');
+    backgroundMusic.volume = 0.6;
+    const image = document.getElementById('clickableImage');
+    const sound = document.getElementById('soundEffect');
+
+    image.addEventListener('click', () => {
+      sound.currentTime = 0;
+      sound.play();
+    });
+  </script>
+
+</body>
+</html>
