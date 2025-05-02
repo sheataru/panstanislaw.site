@@ -38,10 +38,16 @@ body {
 .polishcow {
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  margin: 20px;
+  gap: 20px
 }
 
 .polishcow img {
+  width: 200px;
+  height: auto;
+}
+
+.polishcow video {
   width: 200px;
   height: auto;
 }
