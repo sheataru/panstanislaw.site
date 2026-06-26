@@ -1,4 +1,3 @@
-/* Background with animated rainbow gradient */
 body {
   margin: 0;
   background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
@@ -6,7 +5,6 @@ body {
   animation: rainbow 15s linear infinite;
 }
 
-/* Center image horizontally at top */
 .top-center {
   display: flex;
   justify-content: center;
@@ -74,7 +72,52 @@ body {
   height: auto;
 }
 
-/* Style and animate the image */
+.agavideo {
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+}
+
+.agavideo video {
+	width: 450px;
+	height: 100px;
+}
+
+.drinkwater {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.drinkwater img {
+  width: 600px;
+  height: auto;
+}
+
+.drinkwatervideo {
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+}
+
+.drinkwatervideo video {
+	width: 250px;
+	height: auto;
+}
+
+.bannerad {
+	position: absolute;
+	left: 0;
+	top: 600px;
+	margin: 0;
+	margin-left: 10px;
+}
+
+.bannerad img {
+	width: 250px;
+	height: auto;
+}
+
 .top-center img {
   width: 600px;
   height: auto;
@@ -84,14 +127,13 @@ body {
   filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.7));
 }
 
-/* Stronger and continuous rocking */
 @keyframes seesaw {
   0%   { transform: rotate(-15deg); }
   50%  { transform: rotate(45deg); }
   100% { transform: rotate(-15deg); }
 }
 
-/* Rainbow animation keyframes */
+
 @keyframes rainbow {
   0%   { background-position: 0% 50%; }
   100% { background-position: 100% 50%; }
